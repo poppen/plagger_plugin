@@ -9,15 +9,6 @@ use DateTime;
 use YAML;
 use Data::Dumper;
 
-sub message {
-    print @_;
-}
-
-sub abort {
-    &message(@_);
-    exit 8;
-}
-
 # get password
 my $config = pit_get("www.lib.hidaka.saitama.jp", require => {
         "username" => "your username",
