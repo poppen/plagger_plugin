@@ -1,0 +1,6 @@
+match: http://www\.bsddiary\.net/d/news\.html
+extract: <a href="((\d{4})(\d{2})\.html#(\d{2}))" name="\d+">(.*?)</a>(.*?)<hr>
+extract_capture: link year month day title body
+extract_after_hook: |
+    $data->{link} = "http://www.bsddiary.net/d/" . $data->{link};
+    $data->{date} = $data->{year} . $data->{month} . $data->{day};
