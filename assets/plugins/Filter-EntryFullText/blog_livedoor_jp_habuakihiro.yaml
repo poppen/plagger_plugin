@@ -1,0 +1,5 @@
+author: poppen
+handle_force: http://blog\.livedoor\.jp/habuakihiro/archives/\d+\.html
+extract_xpath:
+  body: //div[@class="blogbody"]
+

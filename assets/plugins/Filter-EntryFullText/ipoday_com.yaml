@@ -1,0 +1,5 @@
+author: poppen
+handle_force: http://\w+\.ipoday\.com/\S+/\w+\.html
+extract_xpath:
+  body: //div[@id='extended' and @class='textBody']
+
