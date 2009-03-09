@@ -1,0 +1,6 @@
+# http://www.moongift.jp/
+author: poppen
+force_handle: http://www\.moongift\.jp/\d{4}/\d{2}/\w+/
+extract_xpath:
+  body: //div[@class='entry'][2]
+
