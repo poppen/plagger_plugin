@@ -1,0 +1,6 @@
+# http://www.macotakara.jp/blog/
+author: poppen
+handle_force: http://www\.macotakara\.jp/blog/index\.php\?ID=\d+
+extract_xpath:
+  body: //div[@class='newsTextBox']
+
