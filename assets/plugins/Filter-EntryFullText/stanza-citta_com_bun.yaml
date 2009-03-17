@@ -1,0 +1,6 @@
+# upgrade http://stanza-citta.com/bun/
+author: poppen
+handle_force: http://stanza-citta\.com/bun/\d{4}/\d{2}/\d{2}/\d+
+extract: <div id="content">(.*?)<p id="postmeta">
+extract_capture: body
+
