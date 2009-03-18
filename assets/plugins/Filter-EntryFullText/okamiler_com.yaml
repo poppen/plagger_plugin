@@ -1,0 +1,9 @@
+# upgrade http://www.okamiler.com/
+author: poppen
+handle_force: http://www\.okamiler\.com/archives/\d+\.html$
+extract_xpath:
+  body: //div[@class="main"]
+  mainmore: //div[@class="mainmore"]
+extract_after_hook: |
+  $data->{body} = $data->{body} . $data->{mainmore} if $data->{mainmore}
+
