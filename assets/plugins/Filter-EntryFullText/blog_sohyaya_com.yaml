@@ -1,0 +1,6 @@
+# upgrade http://blog.sohaya.com/d/
+author: poppen
+handle_force: http://blog\.sohaya\.com/\d{4}/\d{2}/\d{2}/\w+
+extract_xpath:
+  body: //div[@class="post-text"][1]
+
