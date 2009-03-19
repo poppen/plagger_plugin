@@ -1,0 +1,6 @@
+# upgrade http://d.hatena.ne.jp/ShisyoTsukasa/
+author: poppen
+handle_force: http://d\.hatena\.ne\.jp/ShisyoTsukasa/\d{8}/p\d+
+extract: </h3>(.*?)<p class="sectionfooter">
+extract_capture: body
+
