@@ -1,0 +1,5 @@
+# http://*.exblog.jp/
+author: poppen
+handle_force: http://[\w\-]+\.exblog\.jp/\d+
+extract_xpath:
+  body: //div[@class='POST_BODY']
