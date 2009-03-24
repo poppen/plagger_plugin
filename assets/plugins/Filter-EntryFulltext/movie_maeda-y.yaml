@@ -1,0 +1,8 @@
+# Upgrade Cho Eiga Hihyo
+author: poppen
+handle: http://movie\.maeda-y\.com/
+custom_feed_handle: http://movie\.maeda-y\.com/
+custom_feed_follow_link: /movie/\d+.htm
+extract: <div class="main">(.*?)<div id="footer">
+extract_capture: body
+
