@@ -1,0 +1,6 @@
+# upgrade http://google-mania.net/
+author: poppen
+handle_force: http://google-mania\.net/archives/\d+
+extract: <hr>.*?<!--- /ignore --->(.*?)<span class="UTWPrimaryTags">
+extract_capture: body
+
