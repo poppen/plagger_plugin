@@ -1,0 +1,6 @@
+# upgrade http://paranoids.sakura.ne.jp/kaworu/
+author: poppen
+handle_force: http://paranoids\.sakura\.ne\.jp/kaworu/\d{4}-\d{2}-\d{2}-\d+\.html
+extract_xpath:
+  body: //div[@class="section"]/p[1]
+
