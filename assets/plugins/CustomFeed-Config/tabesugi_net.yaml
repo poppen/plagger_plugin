@@ -1,0 +1,6 @@
+match: http://tabesugi\.net/memo/cur/cur\.html
+extract: <h4><a href="(#\d+)" name="\d+">(/\d+).*?</h4>.*?<hr noshade size="2">(.*?)\s{3}
+extract_capture: link title body
+extract_after_hook: |
+    $data->{link} = "http://tabesugi.net/memo/cur/cur.html" . $data->{link};
+
