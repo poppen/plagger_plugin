@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use Finance::Currency::Convert::WebserviceX;
-use DateTime;
+use DateTime::Format::Mail;
 use YAML;
 
 sub err_msg {
@@ -21,15 +21,15 @@ my $output = {
     entry => [],
 };
 
+my $df = DateTime::Format::Mail->new;
 my $cc = Finance::Currency::Convert::WebserviceX->new;
 
 while (@currencies) {
     my $from_currency = uc( shift(@currencies) );
     my $to_currency = uc( shift(@currencies) );
 
-    my $dt = DateTime->now( time_zone => 'Asia/Tokyo' );
-
     my $result = $cc->convert(1, $from_currency, $to_currency);
+    my $dt = $df->parse_datetime( $cc->{'response'}->header('Date') );
 
     push @{$output->{entry}}, {
         title => "Currency Rates: $from_currency/$to_currency",
