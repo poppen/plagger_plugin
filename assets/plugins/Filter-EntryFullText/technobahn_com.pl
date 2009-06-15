@@ -19,7 +19,8 @@ sub extract {
         $content = $args->{content};
     }
 
-    if ($content =~ m|<td bgcolor="#ffffff" height="10%" valign=top>(.*?)</td></tr><tr><td><img src=".*?/images/clear.gif" width=620 height=10>|ms) {
+
+    if ($content =~ m|<td bgcolor="#ffffff" height="10%" valign=top>(.*?)</td></tr><tr><td><img src="(http://img.yahoo.co.jp)?/images/clear.gif" width=620 height=10>|ms) {
         return $1;
     }
     return;
