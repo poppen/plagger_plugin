@@ -7,7 +7,7 @@ use DateTime::Format::Mail;
 use YAML;
 
 sub err_msg {
-    return "Usage: currency.pl from_currency to_currency [from_currency to_currency] ...\n";
+    return "Usage: currency.pl from_iso_currency_code to_iso_currency_code [from_iso_currency_code to_iso_currency_code] ...\n";
 }
 
 my @currencies = @ARGV
